@@ -3,15 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="test.login.Login">
+      <class name="test2.myAccount.TestMyAccount">
         <methods>
-          <include name="beforeClass"/>
-          <include name="UspesnoLogovanje"/>
           <include name="afterClass"/>
-          <include name="NeuspesnoLogovanje1"/>
-          <include name="NeuspesnoLogovanje"/>
+          <include name="test1"/>
+          <include name="beforeClass"/>
+          <include name="test2"/>
         </methods>
-      </class> <!-- test.login.Login -->
+      </class> <!-- test2.myAccount.TestMyAccount -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
