@@ -3,19 +3,19 @@
 <suite name="test" verbose="1" >
   <test name="one script" >
   
-  <groups>
+  <!--groups>
     <run>
-    <include name = "login">
+      <include name="login" />
     </run>
-    </groups>
-    
+  </groups-->
+  
   <packages>
-  	<package name= "test1" />
-  	</packages>
+  	<package name= "test.cdd"/>
+  </packages>
   	
   	
     <!--classes>
-       <class name="test1.login.TNGAnnotations"/>                    
+       <class name="test.login.TNGAnnotations"/>                    
     </classes-->
   </test>
 </suite>
