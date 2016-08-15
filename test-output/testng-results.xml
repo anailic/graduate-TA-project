@@ -1,25 +1,132 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="1" failed="1" total="2" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="26797" started-at="2016-08-11T07:36:18Z" finished-at="2016-08-11T07:36:45Z">
+  <suite name="Default suite" duration-ms="29350" started-at="2016-08-12T13:14:36Z" finished-at="2016-08-12T13:15:06Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="26797" started-at="2016-08-11T07:36:18Z" finished-at="2016-08-11T07:36:45Z">
-      <class name="test2.endavaUnivirsity.TestEndavaUniversity">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:test2.endavaUnivirsity.TestEndavaUniversity@6d78f375]" name="beforeClass" is-config="true" duration-ms="23082" started-at="2016-08-11T09:36:18Z" finished-at="2016-08-11T09:36:41Z">
+    <test name="Default test" duration-ms="29350" started-at="2016-08-12T13:14:36Z" finished-at="2016-08-12T13:15:06Z">
+      <class name="test2.myAccount.TestMyAccount">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:test2.myAccount.TestMyAccount@6d78f375]" name="beforeClass" is-config="true" duration-ms="21826" started-at="2016-08-12T15:14:36Z" finished-at="2016-08-12T15:14:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="EndavaUnivers()[pri:0, instance:test2.endavaUnivirsity.TestEndavaUniversity@6d78f375]" name="EndavaUnivers" duration-ms="3121" started-at="2016-08-11T09:36:41Z" finished-at="2016-08-11T09:36:44Z">
+        <test-method status="FAIL" signature="test2()[pri:0, instance:test2.myAccount.TestMyAccount@6d78f375]" name="test2" duration-ms="378" started-at="2016-08-12T15:14:58Z" finished-at="2016-08-12T15:14:59Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: {"method":"link text","selector":"Career Developmetn Discussion"}
+Command duration or timeout: 355 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
+System info: host: 'L-005228', ip: '192.168.5.164', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_102'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=43.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 4cba1ecc-8fac-4c02-ab93-4120d9bf272e
+*** Element info: {Using=link text, value=Career Developmetn Discussion}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"link text","selector":"Career Developmetn Discussion"}
+Command duration or timeout: 355 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
+System info: host: 'L-005228', ip: '192.168.5.164', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_102'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=43.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 4cba1ecc-8fac-4c02-ab93-4120d9bf272e
+*** Element info: {Using=link text, value=Career Developmetn Discussion}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:246)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy7.getText(Unknown Source)
+	at library.pages.MyProfile.getCareer(MyProfile.java:42)
+	at test2.myAccount.TestMyAccount.test2(TestMyAccount.java:63)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:128)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:745)
+	at org.testng.TestRunner.run(TestRunner.java:599)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1284)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1209)
+	at org.testng.TestNG.runSuites(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1096)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:174)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:78)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"link text","selector":"Career Developmetn Discussion"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.1', revision: 'a36b8b1', time: '2016-06-30 17:37:03'
+System info: host: 'L-005228', ip: '192.168.5.164', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_102'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/ANA~1.ILI/AppData/Local/Temp/anonymous5140236191869890237webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///C:/Users/ANA~1.ILI/AppData/Local/Temp/anonymous5140236191869890237webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10779)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/ANA~1.ILI/AppData/Local/Temp/anonymous5140236191869890237webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12661)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/ANA~1.ILI/AppData/Local/Temp/anonymous5140236191869890237webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12666)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/ANA~1.ILI/AppData/Local/Temp/anonymous5140236191869890237webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12608)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- EndavaUnivers -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:test2.endavaUnivirsity.TestEndavaUniversity@6d78f375]" name="afterClass" is-config="true" duration-ms="547" started-at="2016-08-11T09:36:44Z" finished-at="2016-08-11T09:36:45Z">
+        </test-method> <!-- test2 -->
+        <test-method status="SKIP" signature="test1()[pri:0, instance:test2.myAccount.TestMyAccount@6d78f375]" name="test1" duration-ms="0" started-at="2016-08-12T15:14:59Z" depends-on-methods="test2.myAccount.TestMyAccount.test2" finished-at="2016-08-12T15:14:59Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method TestMyAccount.test1()[pri:0, instance:test2.myAccount.TestMyAccount@6d78f375] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method TestMyAccount.test1()[pri:0, instance:test2.myAccount.TestMyAccount@6d78f375] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1028)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:128)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:745)
+	at org.testng.TestRunner.run(TestRunner.java:599)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1284)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1209)
+	at org.testng.TestNG.runSuites(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1096)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:174)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:78)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:test2.myAccount.TestMyAccount@6d78f375]" name="afterClass" is-config="true" duration-ms="7089" started-at="2016-08-12T15:14:59Z" finished-at="2016-08-12T15:15:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- test2.endavaUnivirsity.TestEndavaUniversity -->
+      </class> <!-- test2.myAccount.TestMyAccount -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
